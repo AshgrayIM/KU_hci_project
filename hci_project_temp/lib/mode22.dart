@@ -10,8 +10,6 @@ class MyMode22 extends StatefulWidget{
   MyMode22(var str,var pI){
     _MyMode22State.word=str;
     _MyMode22State.i=pI;
-    if(pI==0)
-      _MyMode22State.maxI = 0;
   }
   @override
   _MyMode22State createState() => _MyMode22State();
