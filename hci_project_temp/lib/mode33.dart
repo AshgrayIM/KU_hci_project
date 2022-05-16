@@ -354,7 +354,7 @@ class _MyMode33State extends State<MyMode33>{
                 jung = 28;
                 break;
               case 1://ㅐ
-                jung = 37;
+                jung = 38;
                 break;
               case 2://ㅑ
                 jung = 29;
