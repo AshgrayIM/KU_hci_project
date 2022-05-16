@@ -111,7 +111,7 @@ class _MyMode22State extends State<MyMode22>{
     );
   }
   void _changeWordToBraille() {
-    if (maxI > 0) {
+    if (i!= 0) {
       return;
     }
     var isKor = true;
