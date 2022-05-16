@@ -46,7 +46,7 @@ class braille {
     hangle[35][0]=1;hangle[35][1]=1;hangle[35][5]=1;//ㅠ
     hangle[36][1]=1;hangle[36][2]=1;hangle[36][5]=1;//ㅡ
     hangle[37][0]=1;hangle[37][3]=1;hangle[37][4]=1;//ㅣ
-    hangle[38][0]=1;hangle[38][2]=1;hangle[38][3]=1;hangle[37][4]=1;//ㅐ
+    hangle[38][0]=1;hangle[38][2]=1;hangle[38][3]=1;hangle[38][4]=1;//ㅐ
     hangle[39][0]=1;hangle[39][1]=1;hangle[39][3]=1;hangle[39][4]=1;//ㅔ
     hangle[40][0]=1;hangle[40][1]=1;hangle[40][3]=1;
     hangle[40][4]=1;hangle[40][5]=1;//ㅚ
