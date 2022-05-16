@@ -21,6 +21,7 @@ class _MyMode33State extends State<MyMode33>{
   var word;
   static var i=0;
   static var maxI =0;
+  static var showChar = '';
   static var brailleWord;
   var check =List.generate(6, (index) => true);
   static var characterList;
@@ -40,10 +41,11 @@ class _MyMode33State extends State<MyMode33>{
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(showChar, style: TextStyle(fontSize:30.0, fontWeight: FontWeight.bold),),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(margin: const EdgeInsets.only(left: 30,top: 40, right: 40,bottom: 40)
+                Container(margin: const EdgeInsets.only(left: 30,top: 30, right: 40,bottom: 40)
                     ,child: RaisedButton(
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
@@ -52,7 +54,7 @@ class _MyMode33State extends State<MyMode33>{
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
-                Container(margin: const EdgeInsets.only(left: 40,top: 40, right: 30,bottom: 40),
+                Container(margin: const EdgeInsets.only(left: 40,top: 30, right: 30,bottom: 40),
                     child: RaisedButton(
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
@@ -170,6 +172,7 @@ class _MyMode33State extends State<MyMode33>{
       case 48 : character = "중성 ㅞ";break;
       default : character = "준비중 입니다.";break;
     }
+    showChar = character;
     final TextEditingController controller = TextEditingController(text:character) ;
     tts.setLanguage('ko-KR');
     tts.setSpeechRate(0.5);

@@ -147,11 +147,11 @@ class _MyMode3State extends State<MyMode3>{
                   }
                 ),
             ),
-            Text(problemNum.toString(), style: TextStyle(fontSize:100.0, fontWeight: FontWeight.bold),),
+            Text(problemNum.toString(), style: TextStyle(fontSize:90.0, fontWeight: FontWeight.bold),),
             Container(
-              margin: EdgeInsets.all(10.0),
+              margin: EdgeInsets.all(20.0),
               child: RaisedButton(
-                  child: Icon(Icons.volume_up_rounded,size: 230,),
+                  child: Icon(Icons.volume_up_rounded,size: 200,),
                   shape: CircleBorder(),
                   padding: EdgeInsets.all(40.0),
                   color: Color(0xFF386D3A),
@@ -166,6 +166,14 @@ class _MyMode3State extends State<MyMode3>{
                     print(word);
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode33(word,0)));
                   },
+              ),
+            ),
+            TextButton(
+              onPressed: () {
+                print(word);
+              },
+              child: Text( "단어 : ${word}",
+                style: TextStyle(fontSize: 30.0, color: Colors.black),
               ),
             )
           ],

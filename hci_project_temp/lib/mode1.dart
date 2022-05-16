@@ -18,6 +18,7 @@ class MyMode1 extends StatefulWidget{
 class _MyMode1State extends State<MyMode1>{
   static var i=0;
   static var maxI = 49;
+  static var showChar = '';
   static var txt = braille();
   var check =List.generate(6, (index) => true);
   final audio = AudioCache();
@@ -32,11 +33,12 @@ class _MyMode1State extends State<MyMode1>{
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Text(showChar, style: TextStyle(fontSize:30.0, fontWeight: FontWeight.bold),),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(margin: const EdgeInsets.only(
-                      left: 30, top: 40, right: 40, bottom: 40)
+                      left: 30, top: 30, right: 40, bottom: 40)
                       , child: RaisedButton(
                         color: Colors.yellow,
                         disabledColor: Colors.grey,
@@ -52,7 +54,7 @@ class _MyMode1State extends State<MyMode1>{
                       )
                   ),
                   Container(margin: const EdgeInsets.only(
-                      left: 40, top: 40, right: 30, bottom: 40),
+                      left: 40, top: 30, right: 30, bottom: 40),
                       child: RaisedButton(
                         color: Colors.yellow,
                         disabledColor: Colors.grey,
@@ -248,6 +250,7 @@ class _MyMode1State extends State<MyMode1>{
       case 48 : word = "중성 ㅞ";break;
       default: word="준비중 입니다.";break;
     }
+    showChar = word;
     final TextEditingController controller = TextEditingController(text:word) ;
     tts.setLanguage('ko-KR');
     tts.setSpeechRate(0.5);
