@@ -172,9 +172,7 @@ class _MyMode3State extends State<MyMode3>{
               onPressed: () {
                 print(word);
               },
-              child: Text( "단어 : ${word}",
-                style: TextStyle(fontSize: 30.0, color: Colors.black),
-              ),
+              child: Text("디버깅용 단어출력"),
             )
           ],
         ),

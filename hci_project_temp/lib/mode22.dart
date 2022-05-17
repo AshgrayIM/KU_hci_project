@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:vibration/vibration.dart';
 import 'braille.dart';
 import 'drawer.dart';
 import 'mode2.dart';
@@ -42,7 +43,7 @@ class _MyMode22State extends State<MyMode22>{
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
                       child: Text('1',style: TextStyle(color: Colors.black,fontSize: 80.0),),
-                      onPressed: brailleWord[i][0] == 0?null:(){check[0]=true; _checkClear();},
+                      onPressed: brailleWord[i][0] == 0?null:(){check[0]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
@@ -51,7 +52,7 @@ class _MyMode22State extends State<MyMode22>{
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
                       child: Text('2',style: TextStyle(color: Colors.black,fontSize: 80.0),),
-                      onPressed: brailleWord[i][1] == 0?null:(){check[1]=true; _checkClear();},
+                      onPressed: brailleWord[i][1] == 0?null:(){check[1]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
@@ -65,7 +66,7 @@ class _MyMode22State extends State<MyMode22>{
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
                       child: Text('3',style: TextStyle(color: Colors.black,fontSize: 80.0),),
-                      onPressed: brailleWord[i][2] == 0?null:(){check[2]=true; _checkClear();},
+                      onPressed: brailleWord[i][2] == 0?null:(){check[2]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
@@ -74,7 +75,7 @@ class _MyMode22State extends State<MyMode22>{
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
                       child: Text('4',style: TextStyle(color: Colors.black,fontSize: 80.0),),
-                      onPressed: brailleWord[i][3] == 0?null:(){check[3]=true; _checkClear();},
+                      onPressed: brailleWord[i][3] == 0?null:(){check[3]=true;; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
@@ -88,7 +89,7 @@ class _MyMode22State extends State<MyMode22>{
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
                       child: Text('5',style: TextStyle(color: Colors.black,fontSize: 80.0),),
-                      onPressed: brailleWord[i][4] == 0?null:(){check[4]=true; _checkClear();},
+                      onPressed: brailleWord[i][4] == 0?null:(){check[4]=true;; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
@@ -97,7 +98,7 @@ class _MyMode22State extends State<MyMode22>{
                       color: Colors.yellow,
                       disabledColor: Colors.grey,
                       child: Text('6',style: TextStyle(color: Colors.black,fontSize: 80.0),),
-                      onPressed: brailleWord[i][5] == 0?null:(){check[5]=true; _checkClear();},
+                      onPressed: brailleWord[i][5] == 0?null:(){check[5]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
@@ -109,6 +110,11 @@ class _MyMode22State extends State<MyMode22>{
       ),
     );
   }
+
+  void _vibrate(){
+    Vibration.vibrate();
+  }
+
   void _changeWordToBraille() {
     if (i!= 0) {
       return;
