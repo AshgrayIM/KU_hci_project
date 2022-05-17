@@ -85,8 +85,8 @@ class _MyMode2State extends State<MyMode2>{
               margin: EdgeInsets.all(40.0),
               child: RaisedButton(
                 onPressed: (){
-                  if(_lastWords == null){
-                    print("단어 입력안됐지만 일단 개발용으로 감자 넣어버리기");
+                  if(_lastWords.isEmpty){
+                    print("단어가 입력안됐지만 무지성으로 감자 넣어버리기");
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode22("감자",0)));
                   }else{
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode22(_lastWords,0)));
