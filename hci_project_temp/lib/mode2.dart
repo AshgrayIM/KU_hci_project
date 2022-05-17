@@ -85,7 +85,12 @@ class _MyMode2State extends State<MyMode2>{
               margin: EdgeInsets.all(40.0),
               child: RaisedButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode22(_lastWords,0)));
+                  if(_lastWords == null){
+                    print("단어 입력안됐지만 일단 개발용으로 감자 넣어버리기");
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode22("감자",0)));
+                  }else{
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode22(_lastWords,0)));
+                  }
                 },
                 child: Text("변환하기!",style: TextStyle(fontSize: 40.0,),textAlign:TextAlign.center,),
                 padding: EdgeInsets.all(20.0),
