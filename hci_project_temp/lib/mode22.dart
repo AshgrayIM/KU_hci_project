@@ -136,7 +136,7 @@ class _MyMode22State extends State<MyMode22>{
     var tempLength = 0;
     if (isKor) {
       //log(word);
-      for (var j = 0; j < word.length-1; j++) {
+      for (var j = 0; j < word.length; j++) {
         var isAorD = ((tempWord[j] - 0xAC00) / 28 / 21).floor();
         if(isAorD==11){
           tempLength++;

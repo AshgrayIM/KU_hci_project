@@ -13,7 +13,7 @@ class _MyMode2State extends State<MyMode2>{
   SpeechToText _speechToText = SpeechToText();
   bool _speechEnabled = false;
   String _lastWords = '';
-  var word = "야";
+  var word = "";
 
   void initState() {
     super.initState();
