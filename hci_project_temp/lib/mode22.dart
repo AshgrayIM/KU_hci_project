@@ -103,6 +103,7 @@ class _MyMode22State extends State<MyMode22>{
                 ),
               ],
             ),
+            Text("단어 : " + word),
           ],
         ),
       ),
