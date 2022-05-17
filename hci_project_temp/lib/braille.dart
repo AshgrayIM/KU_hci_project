@@ -26,7 +26,7 @@ class braille {
     hangle[16][3]=1;hangle[16][4]=1;//종성 ㄷ
     hangle[17][2]=1;//종성 ㄹ
     hangle[18][2]=1;hangle[18][5]=1;//종성 ㅁ
-    hangle[19][0]=1;hangle[19][2]=2;//종성 ㅂ
+    hangle[19][0]=1;hangle[19][2]=1;//종성 ㅂ
     hangle[20][4]=1;//종성 ㅅ
     hangle[21][2]=1;hangle[21][3]=1;hangle[21][4]=1;hangle[21][5]=1;//종성 ㅇ
     hangle[22][0]=1;hangle[22][4]=1;//종성 ㅈ
