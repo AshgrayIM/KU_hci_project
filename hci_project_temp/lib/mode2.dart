@@ -48,12 +48,14 @@ class _MyMode2State extends State<MyMode2>{
   void _onSpeechResult(SpeechRecognitionResult result) {
     setState(() {
       _lastWords = result.recognizedWords;
-      if(_lastWords.contains("교육")){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));
-      }else if(_lastWords.contains("변환")){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode2()));
-      }else if(_lastWords.contains("퀴즈")){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));
+      if(!_lastWords.contains("변환")){
+        if(_lastWords.contains("교육")){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));
+        }else if(_lastWords.contains("퀴즈")){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));
+        }
+      }else{
+        _lastWords.replaceAll("변환", "");
       }
     });
   }
