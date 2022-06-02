@@ -7,6 +7,11 @@ import 'package:vibration/vibration.dart';
 import 'braille.dart';
 import 'drawer.dart';
 import 'mode2.dart';
+import 'package:hci_project_temp/mode1.dart';
+import 'package:hci_project_temp/mode2.dart';
+import 'package:hci_project_temp/mode3.dart';
+import 'package:speech_to_text/speech_to_text.dart';
+import 'package:speech_to_text/speech_recognition_result.dart';
 class MyMode22 extends StatefulWidget{
   MyMode22(var str,var pI){
     _MyMode22State.word=str;
@@ -22,6 +27,51 @@ class _MyMode22State extends State<MyMode22>{
   static var maxI=0;
   static var brailleWord;
   static var characterList;
+  SpeechToText _speechToText = SpeechToText();
+  bool _speechEnabled = false;
+  String _lastWords = '';
+
+  void initState() {
+    super.initState();
+    _initSpeech();
+  }
+
+  /// This has to happen only once per app
+  void _initSpeech() async {
+    _speechEnabled = await _speechToText.initialize();
+    setState(() {});
+  }
+
+  /// Each time to start a speech recognition session
+  void _startListening() async {
+    await _speechToText.listen(onResult: _onSpeechResult);
+    setState(() {});
+  }
+
+  /// Manually stop the active speech recognition session
+  /// Note that there are also timeouts that each platform enforces
+  /// and the SpeechToText plugin supports setting timeouts on the
+  /// listen method.
+  void _stopListening() async {
+    await _speechToText.stop();
+    setState(() {});
+  }
+
+  /// This is the callback that the SpeechToText plugin calls when
+  /// the platform returns recognized words.
+  void _onSpeechResult(SpeechRecognitionResult result) {
+    setState(() {
+      _lastWords = result.recognizedWords;
+      if(_lastWords.contains("교육")){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));
+      }else if(_lastWords.contains("변환")){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode2()));
+      }else if(_lastWords.contains("퀴즈")){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));
+      }
+    });
+  }
+
   var check =List.generate(6, (index) => true);
   @override
   Widget build(BuildContext context){
@@ -31,6 +81,13 @@ class _MyMode22State extends State<MyMode22>{
     return Scaffold(
       appBar: AppBar(title: Text('HCI Braille Education'),),
       drawer: MyDrawer(),
+      floatingActionButton: FloatingActionButton(
+        onPressed:
+        // If not yet listening for speech start, otherwise stop
+        _speechToText.isNotListening ? _startListening : _stopListening,
+        tooltip: 'Listen',
+        child: Icon(_speechToText.isNotListening ? Icons.mic_off : Icons.mic),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -105,6 +162,21 @@ class _MyMode22State extends State<MyMode22>{
               ],
             ),
             Text("단어 : " + word),
+            Container(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                // If listening is active show the recognized words
+                _speechToText.isListening
+                    ? '$_lastWords'
+                // If listening isn't active but could be tell the user
+                // how to start it, otherwise indicate that speech
+                // recognition is not yet ready or not supported on
+                // the target device
+                    : _speechEnabled
+                    ? 'Tap the microphone to start listening...'
+                    : 'Speech not available',
+              ),
+            ),
           ],
         ),
       ),

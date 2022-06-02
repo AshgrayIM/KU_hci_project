@@ -3,6 +3,8 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:hci_project_temp/mode22.dart';
 import 'drawer.dart';
+import 'package:hci_project_temp/mode1.dart';
+import 'package:hci_project_temp/mode3.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 class MyMode2 extends StatefulWidget{
@@ -46,6 +48,13 @@ class _MyMode2State extends State<MyMode2>{
   void _onSpeechResult(SpeechRecognitionResult result) {
     setState(() {
       _lastWords = result.recognizedWords;
+      if(_lastWords.contains("교육")){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));
+      }else if(_lastWords.contains("변환")){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode2()));
+      }else if(_lastWords.contains("퀴즈")){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));
+      }
     });
   }
 
