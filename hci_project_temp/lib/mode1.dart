@@ -96,7 +96,7 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 30, top: 30, right: 40, bottom: 40)
                       , child: RaisedButton(
-                        color: Colors.yellow,
+                        color: Colors.orange,
                         disabledColor: Colors.grey,
                         child: Text('1', style: TextStyle(
                             color: Colors.black, fontSize: 80.0),),
@@ -112,7 +112,7 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 40, top: 30, right: 30, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.yellow,
+                        color: Colors.orange,
                         disabledColor: Colors.grey,
                         child: Text('2', style: TextStyle(
                             color: Colors.black, fontSize: 80.0),),
@@ -133,7 +133,7 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 30, top: 40, right: 40, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.yellow,
+                        color: Colors.orange,
                         disabledColor: Colors.grey,
                         child: Text('3', style: TextStyle(
                             color: Colors.black, fontSize: 80.0),),
@@ -149,7 +149,7 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 40, top: 40, right: 30, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.yellow,
+                        color: Colors.orange,
                         disabledColor: Colors.grey,
                         child: Text('4', style: TextStyle(
                             color: Colors.black, fontSize: 80.0),),
@@ -170,7 +170,7 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 30, top: 40, right: 40, bottom: 40)
                       , child: RaisedButton(
-                        color: Colors.yellow,
+                        color: Colors.orange,
                         disabledColor: Colors.grey,
                         child: Text('5', style: TextStyle(
                             color: Colors.black, fontSize: 80.0),),
@@ -186,7 +186,7 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 40, top: 40, right: 30, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.yellow,
+                        color: Colors.orange,
                         disabledColor: Colors.grey,
                         child: Text('6', style: TextStyle(
                             color: Colors.black, fontSize: 80.0),),
@@ -232,7 +232,7 @@ class _MyMode1State extends State<MyMode1>{
                   margin: const EdgeInsets.only(left: 10.0,top: 15, right: 10.0,bottom: 16.0),
                   child: RaisedButton(
                       padding: EdgeInsets.fromLTRB(10,30,10,30),
-                      color: Colors.yellow,
+                      color: Colors.white,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                       child:Text("다시 하기",style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold)),
                       onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));}

@@ -82,7 +82,7 @@ class _MyHomeState extends State<MyHome>{
               child: RaisedButton(
                   padding: EdgeInsets.fromLTRB(10,30,10,30),
                   child: Text("점자 교육", style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold),),
-                  color: Colors.yellow,
+                  color: Colors.orange,
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));
                   },

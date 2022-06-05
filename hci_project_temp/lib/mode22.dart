@@ -97,7 +97,7 @@ class _MyMode22State extends State<MyMode22>{
               children: [
                 Container(margin: const EdgeInsets.only(left: 30,top: 40, right: 40,bottom: 40)
                     ,child: RaisedButton(
-                      color: Colors.yellow,
+                      color: Colors.orange,
                       disabledColor: Colors.grey,
                       child: Text('1',style: TextStyle(color: Colors.black,fontSize: 80.0),),
                       onPressed: brailleWord[i][0] == 0?null:(){check[0]=true; _vibrate(); _checkClear();},
@@ -106,7 +106,7 @@ class _MyMode22State extends State<MyMode22>{
                 ),
                 Container(margin: const EdgeInsets.only(left: 40,top: 40, right: 30,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.yellow,
+                      color: Colors.orange,
                       disabledColor: Colors.grey,
                       child: Text('2',style: TextStyle(color: Colors.black,fontSize: 80.0),),
                       onPressed: brailleWord[i][1] == 0?null:(){check[1]=true; _vibrate(); _checkClear();},
@@ -120,7 +120,7 @@ class _MyMode22State extends State<MyMode22>{
               children: [
                 Container(margin: const EdgeInsets.only(left: 30,top: 40, right: 40,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.yellow,
+                      color: Colors.orange,
                       disabledColor: Colors.grey,
                       child: Text('3',style: TextStyle(color: Colors.black,fontSize: 80.0),),
                       onPressed: brailleWord[i][2] == 0?null:(){check[2]=true; _vibrate(); _checkClear();},
@@ -129,7 +129,7 @@ class _MyMode22State extends State<MyMode22>{
                 ),
                 Container(margin: const EdgeInsets.only(left: 40,top: 40, right: 30,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.yellow,
+                      color: Colors.orange,
                       disabledColor: Colors.grey,
                       child: Text('4',style: TextStyle(color: Colors.black,fontSize: 80.0),),
                       onPressed: brailleWord[i][3] == 0?null:(){check[3]=true;; _vibrate(); _checkClear();},
@@ -143,7 +143,7 @@ class _MyMode22State extends State<MyMode22>{
               children: [
                 Container(margin: const EdgeInsets.only(left: 30,top: 40, right: 40,bottom: 40)
                     ,child: RaisedButton(
-                      color: Colors.yellow,
+                      color: Colors.orange,
                       disabledColor: Colors.grey,
                       child: Text('5',style: TextStyle(color: Colors.black,fontSize: 80.0),),
                       onPressed: brailleWord[i][4] == 0?null:(){check[4]=true;; _vibrate(); _checkClear();},
@@ -152,7 +152,7 @@ class _MyMode22State extends State<MyMode22>{
                 ),
                 Container(margin: const EdgeInsets.only(left: 40,top: 40, right: 30,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.yellow,
+                      color: Colors.orange,
                       disabledColor: Colors.grey,
                       child: Text('6',style: TextStyle(color: Colors.black,fontSize: 80.0),),
                       onPressed: brailleWord[i][5] == 0?null:(){check[5]=true; _vibrate(); _checkClear();},
