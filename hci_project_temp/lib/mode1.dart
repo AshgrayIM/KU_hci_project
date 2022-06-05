@@ -96,10 +96,10 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 30, top: 30, right: 40, bottom: 40)
                       , child: RaisedButton(
-                        color: Colors.orange,
+                        color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('1', style: TextStyle(
-                            color: Colors.black, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 80.0),),
                         onPressed: txt.hangle[i][0] == 0 ? null : () {
                           _vibrate();
                           check[0] = true;
@@ -112,10 +112,10 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 40, top: 30, right: 30, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.orange,
+                        color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('2', style: TextStyle(
-                            color: Colors.black, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 80.0),),
                         onPressed: txt.hangle[i][1] == 0 ? null : () {
                           _vibrate();
                           check[1] = true;
@@ -133,10 +133,10 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 30, top: 40, right: 40, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.orange,
+                        color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('3', style: TextStyle(
-                            color: Colors.black, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 80.0),),
                         onPressed: txt.hangle[i][2] == 0 ? null : () {
                           _vibrate();
                           check[2] = true;
@@ -149,10 +149,10 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 40, top: 40, right: 30, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.orange,
+                        color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('4', style: TextStyle(
-                            color: Colors.black, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 80.0),),
                         onPressed: txt.hangle[i][3] == 0 ? null : () {
                           _vibrate();
                           check[3] = true;
@@ -170,10 +170,10 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 30, top: 40, right: 40, bottom: 40)
                       , child: RaisedButton(
-                        color: Colors.orange,
+                        color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('5', style: TextStyle(
-                            color: Colors.black, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 80.0),),
                         onPressed: txt.hangle[i][4] == 0 ? null : () {
                           _vibrate();
                           check[4] = true;
@@ -186,10 +186,10 @@ class _MyMode1State extends State<MyMode1>{
                   Container(margin: const EdgeInsets.only(
                       left: 40, top: 40, right: 30, bottom: 40),
                       child: RaisedButton(
-                        color: Colors.orange,
+                        color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('6', style: TextStyle(
-                            color: Colors.black, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 80.0),),
                         onPressed: txt.hangle[i][5] == 0 ? null : () {
                           _vibrate();
                           check[5] = true;
@@ -232,9 +232,9 @@ class _MyMode1State extends State<MyMode1>{
                   margin: const EdgeInsets.only(left: 10.0,top: 15, right: 10.0,bottom: 16.0),
                   child: RaisedButton(
                       padding: EdgeInsets.fromLTRB(10,30,10,30),
-                      color: Colors.white,
+                      color: Colors.black,
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                      child:Text("다시 하기",style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold)),
+                      child:Text("다시 하기",style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold,color: Colors.white)),
                       onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));}
                   ),
                 ),
@@ -242,9 +242,9 @@ class _MyMode1State extends State<MyMode1>{
                   margin: const EdgeInsets.only(left: 10.0,top: 15, right: 10.0,bottom: 16.0),
                   child: RaisedButton(
                     padding: EdgeInsets.fromLTRB(10,30,10,30),
-                    color: Colors.red,
+                    color: Colors.black,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                    child: Text("점자 퀴즈", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold),),
+                    child: Text("점자 퀴즈", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold,color: Colors.white),),
                     onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));},
                   ),
                 )

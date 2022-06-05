@@ -103,18 +103,18 @@ class _MyMode33State extends State<MyMode33>{
               children: [
                 Container(margin: const EdgeInsets.only(left: 30,top: 30, right: 40,bottom: 40)
                     ,child: RaisedButton(
-                      color: Colors.orange,
+                      color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('1',style: TextStyle(color: Colors.black,fontSize: 80.0),),
+                      child: Text('1',style: TextStyle(color: Colors.white,fontSize: 80.0),),
                       onPressed: (){check[0]=true;_waitForCharacter(brailleWord[i][0]);},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
                 Container(margin: const EdgeInsets.only(left: 40,top: 30, right: 30,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.orange,
+                      color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('2',style: TextStyle(color: Colors.black,fontSize: 80.0),),
+                      child: Text('2',style: TextStyle(color: Colors.white,fontSize: 80.0),),
                       onPressed: (){check[1]=true;_waitForCharacter(brailleWord[i][1]);},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
@@ -126,18 +126,18 @@ class _MyMode33State extends State<MyMode33>{
               children: [
                 Container(margin: const EdgeInsets.only(left: 30,top: 40, right: 40,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.orange,
+                      color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('3',style: TextStyle(color: Colors.black,fontSize: 80.0),),
+                      child: Text('3',style: TextStyle(color: Colors.white,fontSize: 80.0),),
                       onPressed: (){check[2]=true;_waitForCharacter(brailleWord[i][2]);},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
                 Container(margin: const EdgeInsets.only(left: 40,top: 40, right: 30,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.orange,
+                      color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('4',style: TextStyle(color: Colors.black,fontSize: 80.0),),
+                      child: Text('4',style: TextStyle(color: Colors.white,fontSize: 80.0),),
                       onPressed: (){check[3]=true;_waitForCharacter(brailleWord[i][3]);},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
@@ -149,18 +149,18 @@ class _MyMode33State extends State<MyMode33>{
               children: [
                 Container(margin: const EdgeInsets.only(left: 30,top: 40, right: 40,bottom: 40)
                     ,child: RaisedButton(
-                      color: Colors.orange,
+                      color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('5',style: TextStyle(color: Colors.black,fontSize: 80.0),),
+                      child: Text('5',style: TextStyle(color: Colors.white,fontSize: 80.0),),
                       onPressed: (){check[4]=true;_waitForCharacter(brailleWord[i][4]);},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
                 ),
                 Container(margin: const EdgeInsets.only(left: 40,top: 40, right: 30,bottom: 40),
                     child: RaisedButton(
-                      color: Colors.orange,
+                      color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('6',style: TextStyle(color: Colors.black,fontSize: 80.0),),
+                      child: Text('6',style: TextStyle(color: Colors.white,fontSize: 80.0),),
                       onPressed: (){check[5]=true;_waitForCharacter(brailleWord[i][5]);},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )

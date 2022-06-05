@@ -88,12 +88,12 @@ class _MyMode3State extends State<MyMode3>{
             child: Icon(_speechToText.isNotListening ? Icons.mic_off : Icons.mic),
           ),
           body: Container(
-            color: Colors.blue,
+            color: Colors.black,
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("${score}점\n축하합니다!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0,),textAlign: TextAlign.center,),
+                  Text("${score}점\n축하합니다!",style: TextStyle(color:Colors.white,fontWeight: FontWeight.bold,fontSize: 70.0,),textAlign: TextAlign.center,),
                   RaisedButton(
                       child: Text("다시하기",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0),),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
@@ -134,12 +134,12 @@ class _MyMode3State extends State<MyMode3>{
             child: Icon(_speechToText.isNotListening ? Icons.mic_off : Icons.mic),
           ),
           body: Container(
-            color: Colors.green,
+            color: Colors.black,
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("${score}점\n아쉽네요T.T",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0,),textAlign: TextAlign.center,),
+                  Text("${score}점\n아쉽네요T.T",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0,color: Colors.white,),textAlign: TextAlign.center,),
                   RaisedButton(
                       child: Text("다시하기",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0),),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
@@ -180,12 +180,12 @@ class _MyMode3State extends State<MyMode3>{
             child: Icon(_speechToText.isNotListening ? Icons.mic_off : Icons.mic),
           ),
           body: Container(
-            color: Colors.orange,
+            color: Colors.black,
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("${score}점\n분발하세요!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0,),textAlign: TextAlign.center,),
+                  Text("${score}점\n분발하세요!",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0,color: Colors.white),textAlign: TextAlign.center,),
                   RaisedButton(
                       child: Text("다시하기",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0),),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
@@ -226,16 +226,16 @@ class _MyMode3State extends State<MyMode3>{
             child: Icon(_speechToText.isNotListening ? Icons.mic_off : Icons.mic),
           ),
           body: Container(
-            color: Colors.red,
+            color: Colors.black,
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("${score}점\n다시 공부\n하세요...",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 65.0,),textAlign: TextAlign.center,),
+                  Text("${score}점\n다시 공부\n하세요...",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 65.0,color: Colors.white),textAlign: TextAlign.center,),
                   RaisedButton(
                       child: Text("다시하기",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 70.0),),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
-                      color: Colors.yellow,
+                      color: Colors.white,
                       onPressed: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));
                       }
@@ -298,8 +298,8 @@ class _MyMode3State extends State<MyMode3>{
                   child: Icon(Icons.volume_up_rounded,size: 200,),
                   shape: CircleBorder(),
                   padding: EdgeInsets.all(40.0),
-                  color: Color(0xFF386D3A),
-                  highlightColor: Color(0xFF5EDB63),
+                  color: Colors.black,
+                  highlightColor: Colors.grey,
                   //짧게 누르면 문제 듣기/다시듣기
                   onPressed: (){
                     _speakProblem();

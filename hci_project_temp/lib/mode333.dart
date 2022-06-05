@@ -72,7 +72,7 @@ class _MyMode333State extends State<MyMode333>{
         child: Icon(_speechToText.isNotListening ? Icons.mic_off : Icons.mic),
       ),
       body: Container(
-        color: isCorrect? Colors.blue : Colors.red,
+        color: Colors.white,
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -82,8 +82,8 @@ class _MyMode333State extends State<MyMode333>{
                 margin: EdgeInsets.all(30.0),
                 child: RaisedButton(
                     padding: EdgeInsets.all(20.0),
-                    child: Text("다음 문제",style: TextStyle(fontSize: 70.0,fontWeight: FontWeight.bold),),
-                    color: isCorrect? Colors.white : Colors.yellow,
+                    child: Text("다음 문제",style: TextStyle(fontSize: 70.0,fontWeight: FontWeight.bold,color: Colors.white),),
+                    color: Colors.black,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                     onPressed: (){
                       Navigator.push(context,
