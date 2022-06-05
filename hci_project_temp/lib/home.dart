@@ -78,11 +78,11 @@ class _MyHomeState extends State<MyHome>{
           children: [
             //첫번째 버튼 Mode1 점자 교육
             Container(
-              margin: const EdgeInsets.only(left: 10.0,top: 15, right: 10.0,bottom: 16.0),
+              margin: const EdgeInsets.only(left: 10.0,top: 40, right: 10.0,bottom: 20.0),
               child: RaisedButton(
-                  padding: EdgeInsets.fromLTRB(10,30,10,30),
-                  child: Text("점자 교육", style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold,color: Colors.white),),
-                  color: Colors.black,
+                  padding: EdgeInsets.fromLTRB(30,20,30,20),
+                  child: Text("점자 교육", style: TextStyle(fontSize: 65.0, fontWeight: FontWeight.bold,color: Colors.white),),
+                  color: Color(0xff292727),
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));
                   },
@@ -91,11 +91,11 @@ class _MyHomeState extends State<MyHome>{
             ),
             //두번째 버튼 mode2 점자 변환
             Container(
-              margin: const EdgeInsets.only(left: 10.0,top: 15.0, right: 10.0,bottom: 15.0),
+              margin: const EdgeInsets.only(left: 10.0,top: 20.0, right: 10.0,bottom: 20.0),
               child: RaisedButton(
-                padding: EdgeInsets.fromLTRB(10,30,10,30),
-                child: Text("점자 변환", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold,color: Colors.white),),
-                color: Colors.black,
+                padding: EdgeInsets.fromLTRB(30,20,30,20),
+                child: Text("점자 변환", style: TextStyle(fontSize: 65.0,fontWeight: FontWeight.bold,color: Colors.white),),
+                color: Color(0xff272727),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode2()));
                 },
@@ -104,11 +104,11 @@ class _MyHomeState extends State<MyHome>{
             ),
             //세번째 버튼 mode3 점자 퀴즈
             Container(
-              margin: const EdgeInsets.only(left: 10.0,top: 15.0, right: 10.0,bottom: 15.0),
+              margin: const EdgeInsets.only(left: 10.0,top: 20.0, right: 10.0,bottom: 15.0),
               child: RaisedButton(
-                padding: EdgeInsets.fromLTRB(10,30,10,30),
-                child: Text("점자 퀴즈", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold,color: Colors.white),),
-                color: Colors.black,
+                padding: EdgeInsets.fromLTRB(30,20,30,20),
+                child: Text("점자 퀴즈", style: TextStyle(fontSize: 65.0,fontWeight: FontWeight.bold,color: Colors.white),),
+                color: Color(0xff272727),
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));
                 },
