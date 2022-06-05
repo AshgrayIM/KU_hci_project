@@ -81,7 +81,7 @@ class _MyHomeState extends State<MyHome>{
               margin: const EdgeInsets.only(left: 10.0,top: 15, right: 10.0,bottom: 16.0),
               child: RaisedButton(
                   padding: EdgeInsets.fromLTRB(10,30,10,30),
-                  child: Text("점자 교육", style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold),),
+                  child: Text("점자 교육", style: TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold,color: Colors.white),),
                   color: Colors.black,
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode1(0)));
@@ -94,7 +94,7 @@ class _MyHomeState extends State<MyHome>{
               margin: const EdgeInsets.only(left: 10.0,top: 15.0, right: 10.0,bottom: 15.0),
               child: RaisedButton(
                 padding: EdgeInsets.fromLTRB(10,30,10,30),
-                child: Text("점자 변환", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold),),
+                child: Text("점자 변환", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold,color: Colors.white),),
                 color: Colors.black,
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode2()));
@@ -107,7 +107,7 @@ class _MyHomeState extends State<MyHome>{
               margin: const EdgeInsets.only(left: 10.0,top: 15.0, right: 10.0,bottom: 15.0),
               child: RaisedButton(
                 padding: EdgeInsets.fromLTRB(10,30,10,30),
-                child: Text("점자 퀴즈", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold),),
+                child: Text("점자 퀴즈", style: TextStyle(fontSize: 80.0,fontWeight: FontWeight.bold,color: Colors.white),),
                 color: Colors.black,
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode3(false,true)));

@@ -98,6 +98,7 @@ class _MyMode1State extends State<MyMode1>{
                       , child: RaisedButton(
                         color: Colors.black,
                         disabledColor: Colors.grey,
+                        padding: EdgeInsets.all(10.0),
                         child: Text('1', style: TextStyle(
                             color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][0] == 0 ? null : () {
@@ -113,6 +114,7 @@ class _MyMode1State extends State<MyMode1>{
                       left: 40, top: 30, right: 30, bottom: 40),
                       child: RaisedButton(
                         color: Colors.black,
+                        padding: EdgeInsets.all(10.0),
                         disabledColor: Colors.grey,
                         child: Text('2', style: TextStyle(
                             color: Colors.white, fontSize: 100.0),),
@@ -135,6 +137,7 @@ class _MyMode1State extends State<MyMode1>{
                       child: RaisedButton(
                         color: Colors.black,
                         disabledColor: Colors.grey,
+                        padding: EdgeInsets.all(10.0),
                         child: Text('3', style: TextStyle(
                             color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][2] == 0 ? null : () {
@@ -151,6 +154,7 @@ class _MyMode1State extends State<MyMode1>{
                       child: RaisedButton(
                         color: Colors.black,
                         disabledColor: Colors.grey,
+                        padding: EdgeInsets.all(10.0),
                         child: Text('4', style: TextStyle(
                             color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][3] == 0 ? null : () {
@@ -172,6 +176,7 @@ class _MyMode1State extends State<MyMode1>{
                       , child: RaisedButton(
                         color: Colors.black,
                         disabledColor: Colors.grey,
+                        padding: EdgeInsets.all(10.0),
                         child: Text('5', style: TextStyle(
                             color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][4] == 0 ? null : () {
@@ -188,6 +193,7 @@ class _MyMode1State extends State<MyMode1>{
                       child: RaisedButton(
                         color: Colors.black,
                         disabledColor: Colors.grey,
+                        padding: EdgeInsets.all(10.0),
                         child: Text('6', style: TextStyle(
                             color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][5] == 0 ? null : () {

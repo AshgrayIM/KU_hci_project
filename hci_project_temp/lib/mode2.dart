@@ -103,7 +103,7 @@ class _MyMode2State extends State<MyMode2>{
                     Navigator.push(context, MaterialPageRoute(builder: (context)=>MyMode22(_lastWords,0)));
                   }
                 },
-                child: Text("변환하기!",style: TextStyle(fontSize: 40.0,),textAlign:TextAlign.center,),
+                child: Text("변환하기!",style: TextStyle(fontSize: 40.0,color: Colors.white),textAlign:TextAlign.center,),
                 padding: EdgeInsets.all(20.0),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
                 elevation: 40.0,

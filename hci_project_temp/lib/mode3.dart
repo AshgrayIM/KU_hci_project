@@ -295,7 +295,7 @@ class _MyMode3State extends State<MyMode3>{
             Container(
               margin: EdgeInsets.all(20.0),
               child: RaisedButton(
-                  child: Icon(Icons.volume_up_rounded,size: 200,),
+                  child: Icon(Icons.volume_up_rounded,size: 200,color: Colors.white),
                   shape: CircleBorder(),
                   padding: EdgeInsets.all(40.0),
                   color: Colors.black,
