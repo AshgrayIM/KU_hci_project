@@ -99,7 +99,7 @@ class _MyMode22State extends State<MyMode22>{
                     ,child: RaisedButton(
                       color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('1',style: TextStyle(color: Colors.white,fontSize: 80.0),),
+                      child: Text('1',style: TextStyle(color: Colors.white,fontSize: 100.0),),
                       onPressed: brailleWord[i][0] == 0?null:(){check[0]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
@@ -108,7 +108,7 @@ class _MyMode22State extends State<MyMode22>{
                     child: RaisedButton(
                       color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('2',style: TextStyle(color: Colors.white,fontSize: 80.0),),
+                      child: Text('2',style: TextStyle(color: Colors.white,fontSize: 100.0),),
                       onPressed: brailleWord[i][1] == 0?null:(){check[1]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
@@ -122,7 +122,7 @@ class _MyMode22State extends State<MyMode22>{
                     child: RaisedButton(
                       color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('3',style: TextStyle(color: Colors.white,fontSize: 80.0),),
+                      child: Text('3',style: TextStyle(color: Colors.white,fontSize: 100.0),),
                       onPressed: brailleWord[i][2] == 0?null:(){check[2]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
@@ -131,7 +131,7 @@ class _MyMode22State extends State<MyMode22>{
                     child: RaisedButton(
                       color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('4',style: TextStyle(color: Colors.white,fontSize: 80.0),),
+                      child: Text('4',style: TextStyle(color: Colors.white,fontSize: 100.0),),
                       onPressed: brailleWord[i][3] == 0?null:(){check[3]=true;; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
@@ -145,7 +145,7 @@ class _MyMode22State extends State<MyMode22>{
                     ,child: RaisedButton(
                       color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('5',style: TextStyle(color: Colors.white,fontSize: 80.0),),
+                      child: Text('5',style: TextStyle(color: Colors.white,fontSize: 100.0),),
                       onPressed: brailleWord[i][4] == 0?null:(){check[4]=true;; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )
@@ -154,7 +154,7 @@ class _MyMode22State extends State<MyMode22>{
                     child: RaisedButton(
                       color: Colors.black,
                       disabledColor: Colors.grey,
-                      child: Text('6',style: TextStyle(color: Colors.white,fontSize: 80.0),),
+                      child: Text('6',style: TextStyle(color: Colors.white,fontSize: 100.0),),
                       onPressed: brailleWord[i][5] == 0?null:(){check[5]=true; _vibrate(); _checkClear();},
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
                     )

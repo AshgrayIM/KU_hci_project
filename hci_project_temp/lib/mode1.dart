@@ -99,7 +99,7 @@ class _MyMode1State extends State<MyMode1>{
                         color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('1', style: TextStyle(
-                            color: Colors.white, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][0] == 0 ? null : () {
                           _vibrate();
                           check[0] = true;
@@ -115,7 +115,7 @@ class _MyMode1State extends State<MyMode1>{
                         color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('2', style: TextStyle(
-                            color: Colors.white, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][1] == 0 ? null : () {
                           _vibrate();
                           check[1] = true;
@@ -136,7 +136,7 @@ class _MyMode1State extends State<MyMode1>{
                         color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('3', style: TextStyle(
-                            color: Colors.white, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][2] == 0 ? null : () {
                           _vibrate();
                           check[2] = true;
@@ -152,7 +152,7 @@ class _MyMode1State extends State<MyMode1>{
                         color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('4', style: TextStyle(
-                            color: Colors.white, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][3] == 0 ? null : () {
                           _vibrate();
                           check[3] = true;
@@ -173,7 +173,7 @@ class _MyMode1State extends State<MyMode1>{
                         color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('5', style: TextStyle(
-                            color: Colors.white, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][4] == 0 ? null : () {
                           _vibrate();
                           check[4] = true;
@@ -189,7 +189,7 @@ class _MyMode1State extends State<MyMode1>{
                         color: Colors.black,
                         disabledColor: Colors.grey,
                         child: Text('6', style: TextStyle(
-                            color: Colors.white, fontSize: 80.0),),
+                            color: Colors.white, fontSize: 100.0),),
                         onPressed: txt.hangle[i][5] == 0 ? null : () {
                           _vibrate();
                           check[5] = true;
